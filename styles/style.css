@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap');
+
+* {
+    font-family: 'Open Sans', sans-serif !important;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(240, 240, 240);
+}
+
+figure {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    max-width: 1550px;
+}
+
+ul.navbar-nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+ul.navbar-nav {
+    padding: 0 !important;
+    flex-wrap: nowrap;
+    margin-left: auto;
+}
+
+ul.navbar-nav li {
+    font-size: 1.15rem;
+    padding: 0 1rem;
+    font-weight: 600;
+}
+
+ul.navbar-nav li i {
+    font-size: 1.5rem;
+    position: relative;
+    line-height: 43px;
+}
+
+ul.navbar-nav li #delivery {
+    background: rgb(172, 169, 169);
+    color: #fff;
+    margin-top: -0.5rem;
+}
+
+a.navbar-brand > img {
+    width: 260px;
+}
+
+.video {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.video video {
+    margin-top: -30px;
+    min-width: 1000px;
+    min-height: 600px;
+    width: 100%;
+    height: 100%;
+}
+
+.company-units > div.d-flex.flex-column {
+    margin-top: 15rem;
+}
+
+h1.text-center {
+    position: relative;
+    margin-top: 6rem;
+    font-size: 5rem;
+}
+
+.line {
+    width: 50%;
+    height: 5px;
+    border-radius: 3px;
+    background-color: #ccc;
+    margin: 0 auto;
+}
+
+.desc {
+    text-align: center;
+    min-height: 200px;
+}
+
+.desc h2 {
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.image,
+.desc {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.desc {
+    width: 40%;
+}
+
+.image img {
+    width: 100%;
+    object-fit: contain;
+}
+
+div.d-flex.flex-column > div {
+    margin: 1rem 0;
+}
+
+@media screen and (max-width: 500px) {
+    #logo {
+        width: 150px;
+        vertical-align: middle;
+    }
+
+    .video video {
+        margin-top: -10px;
+    }
+}
+
+@media screen and (max-width: 1016px) {
+    .desc,
+    .image {
+        width: 100%;
+    }
+
+    .image img {
+        width: 100%;
+        object-fit: contain;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    ul.navbar-nav li {
+        padding: 5px 0;
+        text-align: center;
+    }
+    ul.navbar-nav li:last-child {
+        display: none;
+    }
+}
