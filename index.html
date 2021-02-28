@@ -69,9 +69,15 @@
         </div>
     </nav>
     <section>
-        <div class="video">
-            <video autoplay loop muted src="./assets/video-varanda2mp4.mp4"></video>
+        <!-- Video -->
+
+        <div id="video-bg">
+            <video class="container-fluid" width="1000px" autoplay muted>
+                <!-- Default video source: -->
+                <source type="video/mp4" src="assets/video-varanda2mp4.mp4" media="(orientation:landscape)" />
+            </video>
         </div>
+
     </section>
     <main>
         <div class="container">
@@ -83,7 +89,7 @@
                     <!-- Varanda Jardins -->
                     <div data-aos="fade-right" class="d-flex flex-wrap">
                         <figure class="image">
-                            <img src="./assets/varanda-jardins.png" alt="Varanda Jardins">
+                            <img class="w-100" src="./assets/varanda-jardins.png" alt="Varanda Jardins">
                         </figure>
                         <div class="desc">
                             <h2>Varanda Jardins</h2>
@@ -93,9 +99,9 @@
                         </div>
                     </div>
                     <!-- Varanda JK -->
-                    <div data-aos="fade-left" class="d-flex flex-row-reverse flex-wrap">
+                    <div data-aos="fade-right" class="d-flex flex-row-reverse flex-wrap">
                         <figure class="image">
-                            <img src="./assets/varanda-jk.png" alt="Varanda JK">
+                            <img class="w-100" src="./assets/varanda-jk.png" alt="Varanda JK">
                         </figure>
                         <div class="desc">
                             <h2>Varanda JK</h2>
@@ -109,7 +115,7 @@
                     <!--Varanda Faria Lima-->
                     <div data-aos="fade-right" class="d-flex flex-wrap">
                         <figure class="image">
-                            <img src="./assets/varanda-faria-lima.png" alt="Varanda Faria Lima">
+                            <img class="w-100" src="./assets/varanda-faria-lima.png" alt="Varanda Faria Lima">
                         </figure>
                         <div class="desc">
                             <h2>Varanda Faria Lima</h2>
