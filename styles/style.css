@@ -16,9 +16,13 @@ figure {
     margin: 0;
 }
 
+/* Reset of HTML */
+
 .container {
     max-width: 1550px;
 }
+
+/* Nav-Bar */
 
 ul.navbar-nav {
     display: flex;
@@ -53,6 +57,8 @@ a.navbar-brand > img {
     width: 260px;
 }
 
+/* Video */
+
 div#video-bg {
     position: relative;
     width: 100%;
@@ -69,6 +75,8 @@ div#video-bg video {
     width: 100%;
     height: 100%;
 }
+
+/* Company Units */
 
 .company-units > div.d-flex.flex-column {
     margin-top: 15rem;
@@ -120,6 +128,8 @@ div.d-flex.flex-column > div {
     margin: 1rem 0;
 }
 
+/* Reserve Section */
+
 div.bg {
     width: 100%;
     height: 900px;
@@ -128,6 +138,8 @@ div.bg {
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
+
+/* Form */
 
 form {
     padding-top: 10rem;
@@ -192,6 +204,8 @@ select > option {
     background-color: #fff;
     color: #000;
 }
+
+/* Custom Media Query */
 
 @media screen and (max-width: 950px) {
     form {
