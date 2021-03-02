@@ -331,6 +331,10 @@ footer .company {
         width: 100% !important;
     }
 
+    .gratitude h2 {
+        font-size: 1.9rem;
+    }
+
     .d-flex.w-100.h-100.justify-content-around.align-content-center.flex-wrap > div {
         width: 100% !important;
         margin: 2rem auto;
