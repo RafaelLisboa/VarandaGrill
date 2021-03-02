@@ -21,53 +21,58 @@
 </head>
 
 <body>
-    <!-- Nav Menu -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container">
-            <!-- Mobile Button -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <a class="navbar-brand" href="#">
-                <img id="logo" src="./assets/logo-grande.png" class="d-inline-block mx-auto" />
-            </a>
-            <span class="d-lg-none d-inline-block"><i style="font-size: 30px" class="bi bi-search"></i></span>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav ms-auto mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-nowrap" href="#">O Varanda</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Reservas</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Cardápio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Noticias</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Eventos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contato</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="delivery" href="#"><i class="bi bi-cart2 me-2"></i>
-                            <span>Delivery</span></a>
-                    </li>
-                    <li class="nav-item d-">
-                        <i class="bi bi-search"></i>
-                    </li>
+    <header>
+        <!-- Nav Menu -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <!-- Mobile Button -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    <img id="logo" src="./assets/logo-grande.png" class="d-inline-block mx-auto" />
+                </a>
+                <span class="d-lg-none d-inline-block"><i style="font-size: 30px" class="bi bi-search"></i></span>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav ms-auto mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-nowrap" href="#">O Varanda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Reservas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Cardápio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Noticias</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Eventos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contato</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="delivery" href="#"><i class="bi bi-cart2 me-2"></i>
+                                <span>Delivery</span></a>
+                        </li>
+                        <li class="nav-item d-">
+                            <i class="bi bi-search"></i>
+                        </li>
 
-                </ul>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+
+    </header>
+
     <!-- Video -->
 
     <div id="video-bg">
@@ -124,7 +129,6 @@
         </div>
 
         <!-- Form for reserve-->
-
         <section class="reserve">
             <div class="bg">
                 <div class="form-container">
@@ -156,7 +160,71 @@
                 </div>
             </div>
         </section>
+        <section style="background-color: #fff;">
+            <div class="container p-5">
+                <div class="gratitude">
+                    <h2 class="w-100 text-center">Reconhecimento</h2>
+                    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="2000">
+                                <img src="./assets/sao-paulo.png" class="d-block w-75 mx-auto"
+                                    alt="Logo Estado de São Paulo">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="2000">
+                                <img src="./assets/go.png" class="d-block w-75 mx-auto" alt="Logo Go Daddy">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="2000">
+                                <img src="./assets/paladar.png" class="d-block w-75 mx-auto" alt="Logo Paladar">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
+    <footer>
+        <div class="container h-100">
+            <div class="d-flex w-100 h-100 justify-content-around align-content-center flex-wrap">
+                <div class="logo">
+                    <div class="logo-wrapper">
+                        <img id="logo-footer" src="./assets/footer-varanda.png" alt="Logo Varanda Grill">
+                    </div>
+                    <small class="d-block pt-3 text-center">&copy; Copyright 2021 Varanda Grill<br>
+                        Todos os direitos reservados.</small>
+                </div>
+                <div class="company">
+                    <h2 class="text-center">Varanda Grill</h2>
+                    <p>Varanda Jardins</p>
+                    <p>F: (11) 3887-8870</p>
+                    <p>Varanda JK Shopping</p>
+                    <p>F: (11) 3152-6777</p>
+                    <p>Varanda Faria Lima</p>
+                    <p>F: (11) 3039-6500</p>
+                </div>
+                <div class="social-media">
+                    <h2 class="text-center">Redes Sociais</h2>
+                    <div class="social-media-logo text-center fs-2">
+                        <span class="px-2"><a href="https://pt-br.facebook.com/restaurantevarandagrill/"><i
+                                    class="bi bi-facebook"></i></a></span>
+                        <span class="px-2"><a href="https://www.instagram.com/varandagrill/?hl=pt-br"><i
+                                    class="bi bi-instagram"></i></a></span>
+                        <span class="px-2"><a href="https://www.youtube.com/channel/UCfPUgkeqSbr2CPFLUZQJrdw"><i
+                                    class="bi bi-youtube"></i></a></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"

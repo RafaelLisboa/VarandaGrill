@@ -205,6 +205,80 @@ select > option {
     color: #000;
 }
 
+/* Gratitude */
+
+.gratitude {
+    background: #fff;
+    height: 25rem;
+    width: 30rem;
+    margin: auto;
+    font-family: 'Playfair Display', sans-serif !important;
+}
+
+.gratitude h2 {
+    font-weight: 700;
+    font-size: 3rem;
+    margin-top: 3rem;
+    margin-bottom: 10rem;
+}
+
+/* Footer */
+
+footer {
+    color: #bbb;
+    background-color: rgb(27, 27, 27);
+    height: 35rem;
+}
+
+footer > div {
+    padding: 12rem 0;
+}
+
+#logo-footer {
+    width: 13rem;
+}
+
+footer .company {
+    width: 25rem;
+}
+
+.company h2 {
+    font-size: 2.3rem;
+}
+
+.company p {
+    text-align: center;
+    font-size: 1.15rem;
+}
+
+.social-media-logo span i {
+    color: #bbb;
+}
+
+.social-media-logo span:hover {
+    cursor: pointer;
+    position: relative;
+    transition: 0.3s;
+    font-size: 2.1rem;
+}
+
+.social-media-logo span .bi-facebook {
+    color: #3b5998;
+}
+
+.social-media-logo span .bi-instagram {
+    color: #9b40e6;
+}
+
+.social-media-logo span .bi-youtube {
+    color: #ff0000;
+}
+
+.logo-wrapper {
+    width: 205px;
+    margin: 0 auto;
+}
+
 /* Custom Media Query */
 
 @media screen and (max-width: 950px) {
@@ -247,6 +321,19 @@ select > option {
     .image img {
         width: 100%;
         object-fit: contain;
+    }
+
+    footer {
+        height: 53rem;
+    }
+    .d-flex.w-100.h-100.justify-content-around.align-content-center.flex-wrap > div {
+        width: 100% !important;
+        margin: 2rem auto;
+    }
+
+    .logo {
+        justify-content: center;
+        flex-direction: column;
     }
 }
 
