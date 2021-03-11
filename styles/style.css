@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&display=swap');
 
 * {
     font-family: 'Open Sans', sans-serif !important;
@@ -7,6 +8,7 @@
 
 body {
     background-color: rgb(240, 240, 240);
+    overflow-x: hidden;
 }
 
 figure {
@@ -14,8 +16,28 @@ figure {
     margin: 0;
 }
 
+/* Reset of HTML */
+
 .container {
     max-width: 1550px;
+}
+
+/* Nav-Bar */
+
+.smart-scroll {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+.scrolled-down {
+    transform: translateY(-100%);
+    transition: all 0.3s ease-in-out;
+}
+.scrolled-up {
+    transform: translateY(0);
+    transition: all 0.3s ease-in-out;
 }
 
 ul.navbar-nav {
@@ -31,8 +53,8 @@ ul.navbar-nav {
 
 ul.navbar-nav li {
     font-size: 1.15rem;
-    padding: 0 1rem;
     font-weight: 600;
+    padding: 0 10px;
 }
 
 ul.navbar-nav li i {
@@ -51,19 +73,26 @@ a.navbar-brand > img {
     width: 260px;
 }
 
-.video {
+/* Video */
+
+div#video-bg {
+    position: relative;
     width: 100%;
-    height: 100%;
-    overflow: hidden;
+    height: 600px;
+    padding-top: 600px;
 }
 
-.video video {
-    margin-top: -30px;
-    min-width: 1000px;
-    min-height: 600px;
+div#video-bg video {
+    position: absolute;
+    object-fit: cover !important;
+    z-index: 3;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
 }
+
+/* Company Units */
 
 .company-units > div.d-flex.flex-column {
     margin-top: 15rem;
@@ -95,7 +124,7 @@ h1.text-center {
 
 .image,
 .desc {
-    width: 60%;
+    width: 55%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -113,6 +142,179 @@ h1.text-center {
 
 div.d-flex.flex-column > div {
     margin: 1rem 0;
+}
+
+/* Reserve Section */
+
+div.bg {
+    width: 100%;
+    height: 900px;
+    background-image: url('../assets/reserva-varanda-grill.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* Form */
+
+form {
+    padding-top: 10rem;
+}
+
+form * {
+    font-family: 'Playfair Display' !important;
+}
+
+form h2 {
+    font-size: 5rem;
+    font-weight: 700;
+}
+
+form p {
+    padding-top: 3rem;
+    font-size: 1rem;
+    text-align: justify;
+}
+
+#form {
+    max-width: 850px;
+    margin: 0 auto;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#form input,
+select {
+    font-size: 1rem;
+    color: #ccc;
+    width: 49% !important;
+    padding: 1rem;
+    margin: 0.5rem 2px;
+}
+
+#form textarea,
+select > option {
+    font-size: 1rem !important;
+    color: gray;
+}
+
+#form textarea,
+#form button {
+    margin: 0.5rem 2px;
+    width: 100%;
+}
+
+#form button {
+    margin-top: 5rem;
+    width: 20rem;
+    height: 3rem;
+    background-color: transparent;
+    border: 0.2rem solid #fff;
+    color: #fff;
+    border-radius: 0.5rem;
+}
+
+#form button:hover {
+    transition: 0.5s;
+    background-color: #fff;
+    color: #000;
+}
+
+/* Gratitude */
+
+.gratitude {
+    background: #fff;
+    height: 25rem;
+    width: 30rem;
+    margin: auto;
+    font-family: 'Playfair Display', sans-serif !important;
+}
+
+.gratitude h2 {
+    font-weight: 700;
+    font-size: 3rem;
+    margin-top: 3rem;
+    margin-bottom: 10rem;
+}
+
+/* Footer */
+
+footer {
+    color: #bbb;
+    background-color: rgb(27, 27, 27);
+    height: 35rem;
+}
+
+footer > div {
+    padding: 12rem 0;
+}
+
+#logo-footer {
+    width: 13rem;
+}
+
+footer .company {
+    width: 25rem;
+}
+
+.company h2 {
+    font-size: 2.3rem;
+}
+
+.company p {
+    text-align: center;
+    font-size: 1.15rem;
+}
+
+.social-media-logo span i {
+    color: #bbb;
+}
+
+.social-media-logo span:hover {
+    cursor: pointer;
+    position: relative;
+    transition: 0.3s;
+    font-size: 2.1rem;
+}
+
+.social-media-logo span .bi-facebook {
+    color: #3b5998;
+}
+
+.social-media-logo span .bi-instagram {
+    color: #9b40e6;
+}
+
+.social-media-logo span .bi-youtube {
+    color: #ff0000;
+}
+
+.logo-wrapper {
+    width: 205px;
+    margin: 0 auto;
+}
+
+/* Custom Media Query */
+
+@media screen and (max-width: 950px) {
+    form {
+        padding-top: 3rem !important;
+    }
+
+    #form input,
+    #form select {
+        width: 100% !important;
+        margin: 5px 0;
+    }
+
+    #form textarea {
+        height: 100px;
+    }
+
+    #form button {
+        margin-top: 1rem;
+    }
 }
 
 @media screen and (max-width: 500px) {
@@ -135,6 +337,28 @@ div.d-flex.flex-column > div {
     .image img {
         width: 100%;
         object-fit: contain;
+    }
+
+    footer {
+        height: 53rem;
+    }
+
+    .gratitude {
+        width: 100% !important;
+    }
+
+    .gratitude h2 {
+        font-size: 1.9rem;
+    }
+
+    .d-flex.w-100.h-100.justify-content-around.align-content-center.flex-wrap > div {
+        width: 100% !important;
+        margin: 2rem auto;
+    }
+
+    .logo {
+        justify-content: center;
+        flex-direction: column;
     }
 }
 
